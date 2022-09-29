@@ -3,7 +3,7 @@
 Console.WriteLine("Hello, World!");
 
 
-Test1 tesst1 = new Test2();
+Test1 tesst1 = new();
 tesst1.Print1();
 
 Test2 test2 = (Test2)tesst1;
