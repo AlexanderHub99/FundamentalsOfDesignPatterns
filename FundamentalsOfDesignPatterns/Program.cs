@@ -1,6 +1,6 @@
 ﻿using FundamentalsOfDesignPatterns;
 
-Console.WriteLine("Hello, World!");
+/*Console.WriteLine("Hello, World!");
 
 
 Test1 tesst1 = new();
@@ -24,4 +24,17 @@ else
 Person tom = new Employee("Tom", "Microsoft");
 
 
-tom.Print();
+tom.Print();*/
+
+
+Test1 test1 = new Test1("TEST1");
+Test1 test2 = test1;
+test1.test1 = "Home";
+test1.Print1();
+test2.Print1();
+Console.WriteLine("____________________________");
+test1.Print1();
+testref.test2(ref test1);
+test1?.Print1();
+testref.test2(ref test1);
+test1.Print1();
