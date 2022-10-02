@@ -90,7 +90,7 @@
         }
     }
 
-    class Person
+    public class Person
     {
         public string Name { get; set; }
         public Person(string name)
@@ -102,7 +102,7 @@
             Console.WriteLine(Name);
         }
     }
-    class Employee : Person
+    public class Employee : Person
     {
         public string Company { get; set; }
         public Employee(string name, string company)
@@ -114,6 +114,19 @@
         public override void Print()
         {
             Console.WriteLine($"{Name} работает в {Company}");
+        }
+    }
+
+    public static class Cast
+    {
+        public static Person UpCast(Employee employee)
+        {
+            return (Person)employee;
+        }
+
+        public static Employee DownCast(Person person)
+        {
+            return (Employee)person;
         }
     }
 }

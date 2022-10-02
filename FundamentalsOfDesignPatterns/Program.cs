@@ -38,3 +38,21 @@ testref.test2(ref test1);
 test1?.Print1();
 testref.test2(ref test1);
 test1.Print1();
+
+Console.WriteLine("____________________________");
+
+Employee employee = new Employee("Sasha", "Home");
+Console.WriteLine($"{employee.Name},{employee.Company}");
+Person Person = Cast.UpCast(employee);
+Console.WriteLine($"{Person.Name}");
+Person.Name = "Изменил";
+Console.WriteLine($"{employee.Name},{employee.Company}");
+Console.WriteLine($"{Person.Name}");
+Employee employee2 = Cast.DownCast(Person);
+Console.WriteLine($"{employee2.Name},{employee2.Company}");
+Console.WriteLine($"{Person.Name}");
+employee2.Name = "1";
+Console.WriteLine($"{employee.Name},{employee.Company}");
+Console.WriteLine($"{employee2.Name},{employee2.Company}");
+Console.WriteLine($"{Person.Name}");
+
