@@ -129,4 +129,27 @@
             return (Employee)person;
         }
     }
+
+    public abstract class testAbstract
+    {
+        public virtual void Print()
+        {
+            Console.WriteLine($"asdasdasd");
+        }
+
+        public abstract void Print(String ssdsda);
+    }
+
+    internal class TestAbstract1 : testAbstract
+    {
+        public override void Print(string ssdsda)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Print()
+        {
+            Print();
+        }
+    }
 }
