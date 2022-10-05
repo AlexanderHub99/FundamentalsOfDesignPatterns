@@ -40,7 +40,6 @@ testref.test2(ref test1);
 test1.Print1();
 
 Console.WriteLine("____________________________");
-
 Employee employee = new Employee("Sasha", "Home");
 Console.WriteLine($"{employee.Name},{employee.Company}");
 Person Person = Cast.UpCast(employee);
