@@ -6,6 +6,7 @@ namespace AbstractFactory
     {
         public abstract void Hit();
     }
+
     // абстрактный класс движение
     abstract class Movement
     {
@@ -20,6 +21,7 @@ namespace AbstractFactory
             Console.WriteLine("Стреляем из арбалета");
         }
     }
+
     // класс меч
     class Sword : Weapon
     {
@@ -28,6 +30,7 @@ namespace AbstractFactory
             Console.WriteLine("Бьем мечом");
         }
     }
+
     // движение полета
     class FlyMovement : Movement
     {
@@ -36,6 +39,7 @@ namespace AbstractFactory
             Console.WriteLine("Летим");
         }
     }
+
     // движение - бег
     class RunMovement : Movement
     {
@@ -44,12 +48,14 @@ namespace AbstractFactory
             Console.WriteLine("Бежим");
         }
     }
+
     // класс абстрактной фабрики
     abstract class HeroFactory
     {
         public abstract Movement CreateMovement();
         public abstract Weapon CreateWeapon();
     }
+
     // Фабрика создания летящего героя с арбалетом
     class ElfFactory : HeroFactory
     {
