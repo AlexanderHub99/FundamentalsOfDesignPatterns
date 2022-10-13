@@ -69,6 +69,7 @@ namespace AbstractFactory
             return new Arbalet();
         }
     }
+
     // Фабрика создания бегущего героя с мечом
     class VoinFactory : HeroFactory
     {
