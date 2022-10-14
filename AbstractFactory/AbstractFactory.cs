@@ -22,6 +22,7 @@ namespace AbstractFactory
         }
     }
 
+
     // класс меч
     class Sword : Weapon
     {
